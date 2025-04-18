@@ -21,3 +21,4 @@ Route::get('/login', function () {
 //  Route::view('/login', 'login');
  Route::post('/login',[usercontroller::class,'login']);
  Route::get('/',[productcontroller::class,'index']);
+ Route::get('/details/{id}',[productcontroller::class,'details'])->name('view.details');

@@ -20,21 +20,28 @@ class productseeder extends Seeder
                 'name' => "lg mobile",
                 'price' => '12000',
                 'category' => 'mobile',
-                'gallery' => 'https://www.lg.com/levant_en/mobile-phones',
+                'gallery' => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnFf6DXcgRxe71BOQm1orHpnKjJloo9c2jg&s",
                 'description' => 'android mobile with year 2025 feature'
             ],
             [
                 'name' => "lg tv",
                 'price' => '42000',
                 'category' => 'tv',
-                'gallery' => 'https://www.lg.com/content/dam/channel/wcms/in/images/tvs/70up7500ptz_atr_eail_in_c/gallery/70UP7500PTZ-DZ-01-v1.jpg',
+                'gallery' => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnFf6DXcgRxe71BOQm1orHpnKjJloo9c2jg&s",
                 'description' => 'google tv with year all google feature'
             ],
             [
                 'name' => "samsung moniter",
                 'price' => '9000',
                 'category' => 'moniter',
-                'gallery' => 'https://www.amazon.in/Samsung-Freesync-Bezel-Less-Eye-Saver-LS24DG300EWXXL/dp/B0D9KCPPTK?th=1',
+                'gallery' => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnFf6DXcgRxe71BOQm1orHpnKjJloo9c2jg&s",
+                'description' => 'android mobile with year 2025 feature'
+            ] ,
+            [
+                'name' => "intel moniter",
+                'price' => '5000',
+                'category' => 'moniter',
+                'gallery' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnFf6DXcgRxe71BOQm1orHpnKjJloo9c2jg&s',
                 'description' => 'android mobile with year 2025 feature'
             ]
 

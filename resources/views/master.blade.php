@@ -15,9 +15,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     {{-- bdjs --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
-    </script>
+   
 </head>
 
 <body>
@@ -41,5 +39,22 @@
         padding-top: 100px;
         align-items: center;
     }
+    .custom-product img{
+       height: 500px !important;
+    }
+    .carousel-caption-text{
+        background-color: rgba(135, 207, 235, 0.361);
+    }
+    .trending-item-img{
+        margin-top: 50px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .trending-item{
+        
+    }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+</script>
 </html>
