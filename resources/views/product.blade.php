@@ -37,13 +37,14 @@
             </button>
         </div>
         <div class="trending">
+            <h1>Trending Items</h1>
             <div class="trending-item-img">
                 @foreach ( $products as $item )
                 {{-- <h1>{{$item->gallery}}</h1> --}}
                 <div class="trending-item">
                     <a href="{{route('view.details',$item['id'])}}">    
                         <img src="{{$item['gallery']}}">
-                        <div class="trending--items-text">
+                        <div class="trending-items-text">
                             <h5>{{$item->name}}</h5>
                         </div>
                     </a>

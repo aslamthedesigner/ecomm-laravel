@@ -8,7 +8,11 @@
             </div>
             <div class="mt-2 ">
                 <a class="" href="/">Go Back</a>
+               <form action="/add_to_cart" method="POST">
+                @csrf
+                <input type="hidden" name="product_id" value="{{$product->id}}">
                 <button type="submit" class=" btn btn-outline-primary btn-sm" >Add To Task</button>
+               </form>
                 <button type="submit" class=" btn btn-success btn-sm"  >By Now</button>
             </div>
        
