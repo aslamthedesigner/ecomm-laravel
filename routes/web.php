@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
 });
-//  Route::view('/login', 'login');
+ Route::view('/login', 'login');
  Route::post('/login',[usercontroller::class,'login']);
  Route::get('/',[productcontroller::class,'index']);
  Route::get('/details/{id}',[productcontroller::class,'details'])->name('view.details');

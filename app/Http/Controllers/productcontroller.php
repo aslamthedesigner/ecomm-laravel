@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\userauth;
 use Illuminate\Http\Request;
 use App\Models\product;
 use App\Models\cart;
@@ -34,10 +35,11 @@ class productcontroller extends Controller
             $cart->user_id = $req->session()->get('user')['id'];
 
             $cart->product_id = $req->product_id;
-            $cart->save();  
+            $cart->save();
             return redirect('/');
         } else {
             return redirect('/login');
         }
     }
+  
 }
