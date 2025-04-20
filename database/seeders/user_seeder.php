@@ -21,6 +21,11 @@ class user_seeder extends Seeder
             'name'=>'nawaz',
             'email'=>'nawaz@balapariya.com',
             'password'=>Hash::make('12345')
+        ],
+        [
+            'name'=>'aslam',
+            'email'=>'aslam@bala.com',
+            'password'=>Hash::make('123456')
         ]);
     }
 }

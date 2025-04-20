@@ -1,10 +1,10 @@
 <?php
 use App\Http\Controllers\productcontroller;
 $total=0;
-Session::has('user');
-// if(session::has('user')){
-//   $total= productcontroller::cartItem();
-// }
+// Session::has('user');
+if(Session::has('user')){
+  $total= productcontroller::cartitem();
+}
 
 ?>
 <div class="container-fluid">
@@ -32,7 +32,7 @@ Session::has('user');
                     </form>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link">Card Item({{$total}})</a>
+                            <a class="nav-link" href="/cartlist">Card Item({{$total}})</a>
                           </li>
                           @if (Session::has('user'))
                           <li class="nav-item dropdown">
