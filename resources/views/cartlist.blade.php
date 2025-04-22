@@ -3,7 +3,7 @@
 <div class="container ">
     <div class="row">
         <div class="trending">
-            <h1>Search result</h1>
+            <h1>Cart List</h1>
             <div class="row">
                 @foreach ( $products as $item )
                 <div class="col">
@@ -32,6 +32,7 @@
                 </div>
                 @endforeach
             </div>
+            <a href="/ordernow" class="btn  btn-success mb-3">Order Now</a>
         </div>
     </div>
     @endsection
