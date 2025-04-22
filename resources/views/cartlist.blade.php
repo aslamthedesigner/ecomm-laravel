@@ -26,10 +26,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <form action="/removecart" method="post">
-                        @csrf
-                        <button type="button" value="" class="btn-sm btn btn-warning">Remove From Cart</button>
-                    </form>
+                   
+                        <a href="/removeitem/{{$item->cart_id}}" class="btn-sm btn btn-warning">Remove From Cart</a>
+                  
                 </div>
                 @endforeach
             </div>

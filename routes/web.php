@@ -27,4 +27,4 @@ Route::get('/logout', function () {
  Route::get('/search',[productcontroller::class,'search']);
  Route::post('/add_to_cart',[productcontroller::class,'addtocart']);
  Route::get('/cartlist',[productcontroller::class,'cartlist']);
-//  Route::get('/removecartitem',[productcontroller::class,'removecartitem']);
+ Route::get('/removeitem/{id}',[productcontroller::class,'removecartitem']);
