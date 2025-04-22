@@ -75,21 +75,32 @@ class productcontroller extends Controller
 
         return view('/ordernow', ['products_total' => $total]);
     }
-    function orderplace(Request $req){
+    function orderplace(Request $req)
+    {
         $user_id = session()->get('user')->id;
-       $allcart = cart::where('user_id',$user_id)->get();
-        foreach($allcart as $cart){
+        $allcart = cart::where('user_id', $user_id)->get();
+        foreach ($allcart as $cart) {
             $order = new order;
-            $order->product_id= $cart->product_id;
-            $order->user_id= $cart->user_id;
-            $order->address= $req->address;
-            $order->status= "pending";
-            $order->payment_method= $req->payment;
-            $order->payment_status= "pending";
+            $order->product_id = $cart->product_id;
+            $order->user_id = $cart->user_id;
+            $order->address = $req->address;
+            $order->status = "pending";
+            $order->payment_method = $req->payment;
+            $order->payment_status = "pending";
             $order->save();
         }
-        $allcart = cart::where('user_id',$user_id)->delete(); //order done remove list in cart.
+        $allcart = cart::where('user_id', $user_id)->delete(); //order done remove list in cart.
         return redirect('/');
         // return $req-Input();
+    }
+    function myorder()
+    {
+
+        $user_id = session()->get('user')->id;
+       $myorder = DB::table('orders')
+            ->join('products', 'orders.product_id', 'products.id')
+            ->where('orders.user_id', $user_id)
+            ->get();
+        return view('/myorder', ['order_list' => $myorder]);
     }
 }

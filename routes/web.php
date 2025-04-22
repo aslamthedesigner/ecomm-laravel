@@ -30,3 +30,4 @@ Route::get('/logout', function () {
  Route::get('/removeitem/{id}',[productcontroller::class,'removecartitem']);
  Route::get('/ordernow',[productcontroller::class,'ordernow']);
  Route::post('/orderplace',[productcontroller::class,'orderplace']);
+ Route::get('/myorder',[productcontroller::class,'myorder']);
