@@ -25,7 +25,7 @@ class user_seeder extends Seeder
         [
             'name'=>'aslam',
             'email'=>'aslam@bala.com',
-            'password'=>Hash::make('123456')
+            'password'=>Hash::make('12345')
         ]);
     }
 }
